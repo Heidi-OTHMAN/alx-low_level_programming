@@ -4,9 +4,9 @@
  * main - entry point
  *
  * Description: print all possible different
- *              combinations of two digits.
+ *           Combinations of two digits.
  *
- * Return : 0 (Success)
+ * Return: Always 0 (Success)
 */
 
 int main(void)
