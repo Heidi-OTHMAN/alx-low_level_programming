@@ -1,5 +1,13 @@
 #include <stdio.h>
+#include "main.h"
 
+/**
+ * main - entry point
+ *
+ * Description: Add one line to this code, so that the program prints a[2] = 98
+ *
+ * Return: 0 (Success)
+*/
 int main(void)
 {
 	int n;
