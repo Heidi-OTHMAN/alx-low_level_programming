@@ -1,38 +1,26 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * alloc_grid - 2 dimensional array
- * @width: number of columns
- * @height: number of rows
- * Return: pointer to array
+ * main-print sum of 2 numbers.
+ * @argc:number of commandline arguments.
+ * @argv:pointer to an array of command line arguments.
+ * Return:0-success, non-zero-fail.
 */
 
-int **alloc_grid(int width, int height)
+int main(int argc, char *argv[])
 {
-	int i, j;
-	int **output;
+	int sum;
 
-	if (width <= 0 || height <= 0)
-		return (NULL);
-
-	output = malloc(sizeof(int *) * height);
-
-	if (output == NULL)
-		return (NULL);
-
-	for (i = 0; i < height; i++)
+	if (argc == 3)
 	{
-		output[i] = malloc(sizeof(int) * width);
-
-		if (output[i] == NULL)
-		{
-			free(output);
-			for (j = 0; j <= height; j++)
-				free(output[j]);
-			return (NULL);
-		}
-		for (j = 0; j < width; j++)
-			output[i][j] = 0;
+		sum = atoi(argv[1]) * atoi(argv[2]);
+		printf("%d\n", sum);
 	}
-	return (output);
+	else
+	{
+		printf("Error\n");
+		return (1);
+	}
+
+	return (0);
 }
