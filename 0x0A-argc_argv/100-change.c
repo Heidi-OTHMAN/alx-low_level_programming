@@ -2,7 +2,7 @@
 
 /**
  * main-prints the minimum number of coins
- * to make change for amount of money.
+ * to make change for an amount of money.
  * @argc:number of commandline arguments.
  * @argv:pointer to an array of command line arguments.
  * Return:0-success, non-zero-fail.
