@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts - prints a string, followed be a new line,
+ * _puts - prints a string, followed by a new line,
  * @str: pointer to the string to print
  * Return: void
 */
@@ -64,6 +64,7 @@ void print_int(unsigned long int n)
 		resp = n / divisor;
 		_putchar('0' + resp);
 	}
+
 }
 
 /**
