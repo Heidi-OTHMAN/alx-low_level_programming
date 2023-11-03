@@ -1,8 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
- * _puts - prints a string, followed by a new line,
+ * _puts - prints a string, followed by a new line.
  * @str: pointer to the string to print
  * Return: void
 */
@@ -59,7 +60,6 @@ void print_int(unsigned long int n)
 
 	for (i = 0; n / divisor > 9; i++, divisor *= 10)
 	;
-
 	for (; divisor >= 1; n %= divisor, divisor /= 10)
 	{
 		resp = n / divisor;
