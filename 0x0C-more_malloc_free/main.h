@@ -16,5 +16,9 @@ int main(int argc, char const *argv[]);
 void errors(void);
 int _strlen(char *s);
 int is_digit(char *s);
+int _isdigit(int c);
+int _strlen(char *s);
+char *big_multiply(char *s1, char *s2);
+int main(int argc, char **argv);
 
 #endif
