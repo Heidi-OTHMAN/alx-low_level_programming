@@ -1,4 +1,4 @@
-#include "main.h"
+101-mul.c#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -77,6 +77,8 @@ void print_int(unsigned long int n)
 
 int main(int argc, char const *argv[])
 {
+	(void)argc;
+
 	if (argc != 3)
 	{
 		_puts("Error\n");
