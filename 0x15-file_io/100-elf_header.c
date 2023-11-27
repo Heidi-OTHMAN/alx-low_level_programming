@@ -203,7 +203,7 @@ void print_entry(Elf64_Ehdr h)
 	int i = 0, len = 0;
 	unsigned char *p = (unsigned char *)&h.e_entry;
 
-	printf("  Entry point address:               ");
+	printf("  Entry point address:               0x");
 	if (h.e_ident[EI_DATA] != ELFDATA2MSB)
 	{
 		i = h.e_ident[EI_CLASS] == ELFCLASS64 ? 7 : 3;
